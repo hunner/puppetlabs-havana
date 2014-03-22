@@ -93,6 +93,21 @@ havana::heat::encryption_key: 'heatsecretkey'
 
 havana::horizon::secret_key: 'whu-ghuk'
 
+######## Tempest
+
+havana::tempest::configure_images: true
+havana::tempest::image_name: 'cirros'
+havana::tempest::image_name_alt: 'cirros'
+havana::tempest::configure_network: true
+havana::tempest::public_network_name: 'public'
+havana::tempest::cinder_available: true
+havana::tempest::glance_available: true
+havana::tempest::heat_available: false
+havana::tempest::horizon_available: true
+havana::tempest::neutron_available: true
+havana::tempest::nova_available: true
+havana::tempest::swift_available: false
+
 ######## Log levels
 havana::verbose: 'True'
 havana::debug: 'True'

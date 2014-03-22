@@ -6,4 +6,11 @@ mod "puppetlabs/openstack"
 mod "puppetlabs/mysql", "0.6.1"
 mod "puppetlabs/mongodb"
 
+mod "neutron",
+  :git => "https://review.openstack.org/stackforge/puppet-neutron",
+  :ref => "stable/havana"
+
+mod "tempest",
+  :git => "https://git.openstack.org/stackforge/puppet-tempest",
+  :ref => "stable/havana"
 # vim:ft=ruby

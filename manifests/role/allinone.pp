@@ -18,7 +18,8 @@ class havana::role::allinone inherits ::havana::role {
   class { '::havana::profile::heat::api': }
   class { '::havana::profile::horizon': }
   class { '::havana::profile::auth_file': }
+  #class { '::havana::profile::tempest': }
 
-  # class { '::havana::setup::sharednetwork': }
+  class { '::havana::setup::sharednetwork': }
   class { '::havana::setup::cirros': }
 }
